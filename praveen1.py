@@ -113,4 +113,4 @@ else:
 # if a.isspace:
 #     print("Strong")
 
-Print("praveen is don!")
+print("praveen is don!")
