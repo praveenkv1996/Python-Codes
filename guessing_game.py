@@ -3,7 +3,7 @@ user1=input("Please Enter Player 1 Name:- ")
 user2=input("Please Enter Player 2 Name:- ")
 a=0
 b=0
-for i in range(0,5):
+for i in range(0,3):
     c1= getpass.getpass(user1+" Please Choose(stone/paper/scissor):- ")
     c2=getpass.getpass(user2+" Please Choose(stone/paper/scissor):- ")
     if c1=="stone" and c2=="stone":
@@ -32,9 +32,10 @@ for i in range(0,5):
         print(user1,"Won")
     else:
         print("Please Give Right Input")
+print(user1,"=",a,"points","\n",user2,"=",b,"Points")
 if a<b:
-    print(user2,"Won the Game with",b,"Points")
+    print("",user2,"Won the Game with",b-a,"Points")
 elif a>b:
-    print(user1,"Won the Game with",a,"Points")
+    print(user1,"Won the Game with",a-b,"Points")
 else:
     print("Finally Game Tie")
