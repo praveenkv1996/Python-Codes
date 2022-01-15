@@ -10,13 +10,13 @@ if len(password)>=8 and len(password)<=16:
                     print("not a strong password")
             else:
                 print("password must be contain one numeric")
-                print("Not a strong password")
+                print("weak password")
         else:
             print("password must be contain one small chracter")
-            print("Not a strong password")
+            print("weak password")
     else:
         print("password must be contain one capital character")
-        print("Not a strong password")
+        print("weak password")
 else:
     print("len must be between 8 to 16 characters")
-    print("Not a strong password")
+    print("weak password")
