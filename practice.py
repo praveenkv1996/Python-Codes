@@ -461,16 +461,22 @@
 # while a<=fac:
 #     c*=a
 #     a+=1
-# print(c)
+# print(c)   
 
-b=0
-c=0
-while True:
-    num=int(input("Please Enter Number>>"))
+# b=0
+# c=0
+# while True:
+#     num=int(input("Please Enter Number>>"))
+#     b+=1
+#     c+=num
+#     print("press q if you want to quit",end="")
+#     a=input()
+#     if a=="q":
+#         break
+# print(c//b)
+
+a=["praveen","kumar",5,6,7,1.2]
+b=1
+while b<=len(a):
+    print(a[b-1])
     b+=1
-    c+=num
-    print("press q if you want to quit",end="")
-    a=input()
-    if a=="q":
-        break
-print(c//b)
