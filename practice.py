@@ -475,8 +475,88 @@
 #         break
 # print(c//b)
 
-a=["praveen","kumar",5,6,7,1.2]
-b=1
-while b<=len(a):
-    print(a[b-1])
-    b+=1
+# a=["praveen","kumar",5,6,7,1.2]
+# b=1
+# while b<=len(a):
+#     print(a[b-1])
+#     b+=1
+
+
+# for row in range(6):
+#     for col in range(5):
+#         if (col!=0 and row==0) or (col!=0 and row==5) or col==0 and row!=0 and row!=5:
+#             print("*",end=" ")
+#         else:
+#             print(end=" ")
+#     print()
+# a=1
+# b=2
+# for i in range(1,101):
+#     if a%2!=0 and a<101:
+#      print(a)
+#      a+=2
+#      continue
+#     if b%2==0:
+#         print(b)
+#         b+=2
+
+# a=133
+# sum=0
+# while True:
+#     sum=a//10*a//10+a%10*a%10
+#     a=sum
+#     if sum==1:
+#         print("happy")
+#         break
+#     elif sum==4:
+#         print("not")
+#         break
+
+# 54321
+# 4321
+# 321
+# 21
+# 1
+# for i in range(5):
+#     a=5-i
+#     while a>=1:
+#         print(a,end=" ")
+#         a-=1    
+#     print(""/n)
+
+
+# num=int(input("Enter Number>>"))
+# sum=0
+# while True:
+#     b=num%10
+#     sum=sum+b*b
+#     num=num//10
+#     if num==0:
+#         num=sum
+#         sum=0
+#         if num==1:
+#             break
+#         if num==4:
+#             break
+# if num==1:
+#     print("happy")
+# else:
+#     print("not a happy number")
+
+
+# for row in range(5):
+#     for col in range(5):
+#         if row==0 or row==4 or col+row==4:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+
+for row in range(7):
+    for col in range(7):
+        if (row==0 and col==3) or (row!=0 and (col==2 or col==4)) or (row==2 and (col!=3 and col!=5)) or row==3 and (col==0 or col==5) or row==4 and col<5:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
